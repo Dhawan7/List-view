@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block body_block %}
+<div class="row">
+    <div class="col-md-12">
+      <h1 class='text-warning'>Here is the list of collages</h1>
+      <ul class='list-group'><ol>
+        {% for collage in collages_list %}
+        <li>  <li class='list-group-item'>{{ collage.name }}</li></li>
+        {% endfor %}
+      </ol>
+      </ul>
+    </div>
+</div>
+{% endblock %}
